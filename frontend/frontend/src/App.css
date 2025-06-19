@@ -12,6 +12,8 @@ body, html, #root, .app-container {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* ----------------------------------------------- */
+/* Main header "Philosophy Quotes by Mood" */
 .header {
   margin-top: 3.5rem;
   text-align: center;
@@ -36,133 +38,10 @@ body, html, #root, .app-container {
   letter-spacing: 0.03em;
   font-family: 'Georgia', serif;
 }
-/* Main content */
-.main-content {
-  margin: 2.5rem auto;
-  width: 90%;
-  max-width: 720px;
-  text-align: center;
-  padding: 0 1rem;
-}
 
-/* Quote */
-.quote-display {
-  background: #ffffff;
-  border-radius: 14px;
-  box-shadow: 0 10px 28px rgba(74, 68, 61, 0.1);
-  padding: 2.5rem 3rem;
-  margin-bottom: 2rem;
-  transition: box-shadow 0.3s ease;
-}
+/* ----------------------------------------------- */
+/* Mood Selection Button Space */
 
-.quote-display:hover {
-  box-shadow: 0 14px 40px rgba(74, 68, 61, 0.15);
-}
-
-.quote-text {
-  font-size: 1.9rem;
-  font-weight: 700;
-  color: #4a443d;
-  margin-bottom: 1.3rem;
-  letter-spacing: 0.02em;
-  font-family: 'Merriweather', serif;
-}
-
-.philosopher-name {
-  font-size: 1.15rem;
-  font-weight: 600;
-  color: #7a7465;
-  letter-spacing: 0.04em;
-  font-family: 'Montserrat', sans-serif;
-}
-
-/* Philosopher info */
-.philosopher-info {
-  margin-bottom: 2.5rem;
-  display: flex;
-  align-items: center;
-  gap: 1.8rem;
-  background: #f8f6f1;
-  border-radius: 12px;
-  padding: 1.2rem 1.8rem;
-  box-shadow: inset 0 0 8px #d3cdbf;
-}
-
-.philosopher-image {
-  width: 90px;
-  height: 90px;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 2.5px solid #d3cdbf;
-  transition: transform 0.3s ease;
-}
-.philosopher-image:hover {
-  transform: scale(1.05);
-}
-.philosopher-intro {
-  font-size: 1.05rem;
-  color: #5f594b;
-  font-weight: 400;
-  flex: 1;
-  line-height: 1.5;
-  font-family: 'Georgia', serif;
-}
-
-/* Explanation */
-.explanation-section {
-  background: #fff9e6; /* soft warm cream */
-  border-radius: 14px;
-  padding: 1.8rem 2.2rem;
-  margin-bottom: 2.5rem;
-  color: #5e553f;
-  box-shadow: 0 6px 16px rgba(94, 85, 63, 0.2);
-  font-family: 'Merriweather', serif;
-  font-size: 1.1rem;
-  line-height: 1.6;
-  max-width: 650px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.explanation-text {
-  color: #3e3a2e;
-  max-width: 600px;
-  margin: 0 auto 1.2rem;
-  letter-spacing: 0.015em;
-}
-
-
-/* Buttons */
-.btn-secondary {
-  background: #7a7465;
-  color: #f7f6f2;
-  padding: 0.65rem 1.4rem;
-  border: none;
-  border-radius: 30px;
-  font-weight: 600;
-  margin-bottom: 50px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1.1rem;
-  box-shadow: 0 3px 8px rgba(122, 116, 101, 0.4);
-}
-
-.btn-secondary:hover,
-.btn-secondary:focus {
-  background: #605945;
-  outline: none;
-  box-shadow: 0 6px 14px rgba(74, 68, 61, 0.6);
-}
-
-/* Error */
-.error-message {
-  color: #b74646;
-  font-weight: 600;
-  margin-bottom: 1rem;
-}
-
-/* Mood Modal */
 .modal-overlay {
   position: fixed;
   inset: 0;
@@ -241,6 +120,134 @@ body, html, #root, .app-container {
 
 .mood-btn:active {
   transform: scale(0.97);
+}
+
+/* ----------------------------------------------- */
+/* Main content */
+
+.main-content {
+  margin: 2.5rem auto;
+  width: 90%;
+  max-width: 720px;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+/* Quote */
+.quote-display {
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 10px 28px rgba(74, 68, 61, 0.1);
+  padding: 2.5rem 3rem;
+  margin-bottom: 2rem;
+  transition: box-shadow 0.3s ease;
+}
+
+.quote-display:hover {
+  box-shadow: 0 14px 40px rgba(74, 68, 61, 0.15);
+}
+
+.quote-text {
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: #4a443d;
+  margin-bottom: 1.3rem;
+  letter-spacing: 0.02em;
+  font-family: 'Merriweather', serif;
+}
+
+.philosopher-name {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #7a7465;
+  letter-spacing: 0.04em;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Philosopher info */
+/* .philosopher-info {
+  margin-bottom: 2.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1.8rem;
+  background: #f8f6f1;
+  border-radius: 12px;
+  padding: 1.2rem 1.8rem;
+  box-shadow: inset 0 0 8px #d3cdbf;
+}
+
+.philosopher-image {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2.5px solid #d3cdbf;
+  transition: transform 0.3s ease;
+}
+.philosopher-image:hover {
+  transform: scale(1.05);
+}
+.philosopher-intro {
+  font-size: 1.05rem;
+  color: #5f594b;
+  font-weight: 400;
+  flex: 1;
+  line-height: 1.5;
+  font-family: 'Georgia', serif;
+} */
+
+/* Explanation */
+.explanation-section {
+  background: #fff9e6; /* soft warm cream */
+  border-radius: 14px;
+  padding: 1.8rem 2.2rem;
+  margin-bottom: 2.5rem;
+  color: #5e553f;
+  box-shadow: 0 6px 16px rgba(94, 85, 63, 0.2);
+  font-family: 'Merriweather', serif;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.explanation-text {
+  color: #3e3a2e;
+  max-width: 600px;
+  margin: 0 auto 1.2rem;
+  letter-spacing: 0.015em;
+}
+
+
+/* Buttons */
+.btn-secondary {
+  background: #7a7465;
+  color: #f7f6f2;
+  padding: 0.65rem 1.4rem;
+  border: none;
+  border-radius: 30px;
+  font-weight: 600;
+  margin-bottom: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.1rem;
+  box-shadow: 0 3px 8px rgba(122, 116, 101, 0.4);
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus {
+  background: #605945;
+  outline: none;
+  box-shadow: 0 6px 14px rgba(74, 68, 61, 0.6);
+}
+
+/* Error */
+.error-message {
+  color: #b74646;
+  font-weight: 600;
+  margin-bottom: 1rem;
 }
 
 /* Responsive */
